@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Toby’s Game Giveaway</title>
+
+
+<style type="text/css">
+/*
+This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
+Please leave this notice in place, along with any additional credits below.
+---------------------------------------------------------------
+Title: Avenue
+Author: Bram de Haan <http://atelierbramdehaan.nl>
+Description: modern retro
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+button, input {
+  line-height: normal;
+}
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  /* vertical-align: middle; */
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  /* overflow: visible; */
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  padding: 0 !important;
+}
+#wrapper {
+  margin-bottom: 0;
+}
+#wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+#wrapper dd {
+  margin-bottom: 1em;
+}
+#wrapper li > p:first-child {
+  margin: 0;
+}
+#wrapper caption, #wrapper col, #wrapper colgroup, #wrapper table, #wrapper tbody, #wrapper td, #wrapper tfoot, #wrapper th, #wrapper thead, #wrapper tr {
+  border-spacing: 0;
+}
+#wrapper table {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-collapse: collapse;
+  display: table;
+  empty-cells: hide;
+  margin: -1px 0 23px;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+#wrapper caption {
+  display: table-caption;
+  font-weight: 700;
+}
+#wrapper col {
+  display: table-column;
+}
+#wrapper colgroup {
+  display: table-column-group;
+}
+#wrapper tbody {
+  display: table-row-group;
+}
+#wrapper tfoot {
+  display: table-footer-group;
+}
+#wrapper thead {
+  display: table-header-group;
+  border-bottom: solid 1px #999;
+}
+#wrapper td, #wrapper th {
+  display: table-cell;
+}
+#wrapper tr {
+  display: table-row;
+}
+#wrapper table th, #wrapper table td {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  padding: 0 1em;
+}
+#wrapper dt, #wrapper th {
+  font-weight: 700;
+}
+#wrapper dd {
+  padding-left: 1.4em;
+}
+#wrapper table tr:nth-child(even) {
+  background: rgba(200, 200, 200, 0.25);
+}
+#wrapper figure {
+  display: inline-block;
+  position: relative;
+  margin: 1em 0 2em;
+}
+#wrapper figcaption {
+  font-family: AvenirNext-Italic, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+#wrapper figure:hover > figcaption {
+  /* background: rgba(0,0,0,1) */
+}
+#wrapper pre {
+  display: block;
+  margin: 1.4em auto;
+  background: #FAF8F5;
+  padding: 15px 10px 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border: solid 1px #ddd;
+  font-family: Consolas, Menlo, Monaco, monospace !important;
+  font-size: .875rem;
+  max-width: 90%;
+}
+.poetry #wrapper pre {
+  display: block;
+  font-family: Georgia, Garamond, serif !important;
+  font-size: 110% !important;
+  font-style: italic;
+  line-height: 1.6;
+  margin-left: 1em;
+}
+.poetry #wrapper pre code {
+  font-family: Georgia, Garamond, serif !important;
+
+}
+#wrapper sup, #wrapper sub, #wrapper a.footnote {
+  font-size: 1.4ex;
+  height: 0;
+  line-height: 1;
+  position: relative;
+  vertical-align: super;
+}
+#wrapper sub {
+  vertical-align: sub;
+  top: -1px;
+}
+#wrapper .footnote {
+  font-size: .8rem;
+  vertical-align: super;
+}
+#wrapper .footnotes p {
+  font-size: 1.9ex;
+}
+#wrapper ul ul {
+  margin-left: 1em;
+}
+
+@media print {
+  body {
+    overflow: auto;
+  }
+
+  img, pre, blockquote, table, figure, p {
+    page-break-inside: avoid;
+  }
+
+  #wrapper {
+    background: #fff;
+    color: #111;
+    font-size: 85%;
+    padding: 10px;
+    position: relative;
+    text-indent: 0;
+  }
+}
+
+@media screen {
+  .inverted #wrapper, .inverted {
+    background: #222;
+  }
+
+  .inverted hr {
+    border-color: #999 !important;
+  }
+
+  .inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted pre, .inverted code, .inverted th, .inverted .math, .inverted caption, .inverted dd, .inverted dt {
+    color: #eee !important;
+  }
+
+  .inverted table tr:nth-child(odd), .inverted table th:nth-child(odd), .inverted table td:nth-child(odd) {
+    background: none;
+  }
+
+  .inverted a {
+    color: #ff5778;
+  }
+}
+.max-width {
+  max-width: 100%;
+  height: auto;
+}
+/* ::Base styles Almost exclusively single element selectors */
+/* ------------------------------------------------------------ */
+html {
+  font-size: 100%;
+}
+body {
+  font: 100%/1.388 AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
+  color: #111;
+  padding: 2.5% 5% 5% !important;
+}
+a {
+  color: crimson;
+}
+a:hover, a:focus, a:active {
+  color: #ff2450;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: AvenirNextCondensed-DemiBold, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
+  /* margin: 0; */
+  padding: .5em 0 0;
+}
+h2, h3, h4, h5 {
+  border-bottom: 1px solid #777;
+}
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.11111;
+}
+h2 {
+  font-size: 1.875rem;
+  line-height: 1.33333;
+}
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.45455;
+}
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.33333;
+}
+h6 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+pre, label {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+p {
+  font-size: 1.388rem;
+  line-height: 1.33333;
+  /* margin: 0; */
+  padding: .5em 0;
+  max-width: 30em;
+}
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p {
+  padding-top: 0;
+  margin-top: 1px;
+  border-top: 1px solid #999;
+}
+ol, ul {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 2em 0;
+}
+li {
+  line-height: auto;
+}
+ul {
+  list-style-position: outside;
+  list-style-type: square;
+}
+ol {
+  list-style-position: outside;
+  list-style-type: decimal;
+}
+strong, b {
+  font-family: AvenirNext-Bold, AvenirNextCondensed-DemiBold, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
+  font-weight: 600;
+}
+em, i, q {
+  font-family: AvenirNext-BoldItalic, AvenirNext-Italic, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
+  font-style: italic;
+}
+blockquote {
+  padding-left: 1em;
+  border-left: 0.3125em solid #c0c0c0;
+  line-height: normal;
+  /* margin: 0; */
+}
+blockquote p {
+  font-family: AvenirNext-Italic, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
+  font-style: italic;
+  /* margin: 0; */
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: 1.2em 0 1.2em 0;
+}
+
+@media screen and (max-width: 750px) {
+  -webkit-text-size-adjust: none;
+}
+
+.pagecontent {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="pagecontent">
+<h1 id="toc_0">Toby’s Game Giveaway</h1>
+
+<p>I have a ton of un-redeemed Steam codes from all the Humble Bundles I’ve bought over the years. Some are for games I already have on Steam. Some are for games I own on another platform. Others are for games I’m not interested in playing. At least not when my list of “games I want to play” (as well as “books I want to read” and “TV shows I want to watch”) is already so long.</p>
+
+<p>So I’m doing a giveaway. Look through the available games below, think about which ones you want, then <a href="https://goo.gl/forms/8ShZg7QdDffyTch03">go fill this form out</a>. An explanation of how the giveaway works is over there.</p>
+
+<p>There are a lot of popular and well-reviewed games here. I left out a few games that had really bad reviews. I’m not trying to dump trash games onto my friends. But I did list some games with clear flaws (e.g. clunky controls) as long as they still had fans.</p>
+
+<p>For now, I’m limiting the giveaway to people I know. But I’m defining that pretty broadly. If we’ve never really talked, but we’re mutuals on tumblr, or you’re in my Love Nikki association, that still counts as “I know you”. Just tell me how you know me in the giveaway entry form (e.g. “I’m username on tumblr and we’ve followed each other for ages”).</p>
+
+<p>Now on to the games!</p>
+
+<h1 id="toc_1"><a href="https://store.steampowered.com/app/330820/2064_Read_Only_Memories/">2064: Read Only Memories</a></h1>
+
+<h1 id="toc_2"><a href="https://store.steampowered.com/app/330820/2064_Read_Only_Memories/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/330820/header.jpg" alt="2064: Read Only Memories"></a></h1>
+
+<blockquote>
+<p>2064: Read Only Memories is a cyberpunk thriller that explores the social challenges of tomorrow through classic adventure gaming. A journalist-turned-detective teams up with Turing, the world’s first sapient machine, to unmask a conspiracy that will shake the foundations of Neo-San Francisco.</p>
+</blockquote>
+
+<h1 id="toc_3"><a href="https://store.steampowered.com/app/207650/A_Virus_Named_TOM/">A Virus Named TOM</a></h1>
+
+<h1 id="toc_4"><a href="https://store.steampowered.com/app/207650/A_Virus_Named_TOM/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/207650/header.jpg?" alt="A Virus Named TOM"></a></h1>
+
+<blockquote>
+<p>A perfect place. A city without traffic. A dog that doesn&#39;t poop. All products of the brilliant mind of Dr. X, but hell hath no fury like a mad scientist fired by a giant corporation. In this unique action-puzzler you take control of TOM, a virus created for one purpose: revenge.</p>
+
+<p>Hack your way through brain scrambling puzzles while maneuvering through a thumb cramping maze of enemies. Team up through over 50 cooperative levels in what MMGN is calling &quot;The most addictive co-op game we&#39;ve played since Portal 2.&quot; And if the over 100 levels aren&#39;t enough, you and your friends can destroy each other again and again in battle mode to determine just who is the supreme virus.</p>
+</blockquote>
+
+<h1 id="toc_5"><a href="https://store.steampowered.com/app/40400/AI_War_Fleet_Command/">AI War: Fleet Command</a></h1>
+
+<h1 id="toc_6"><a href="https://store.steampowered.com/app/40400/AI_War_Fleet_Command/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/40400/header.jpg" alt="AI War: Fleet Command"></a></h1>
+
+<blockquote>
+<p>&quot;You are outgunned. You are massively outnumbered. You must win.&quot; These are your orders.</p>
+
+<p>Humanity has already fought its war against the machines -- and lost. AI death squads stand watch over every planet and every wormhole, the few remaining human settlements are held captive in orbiting bubbles, and the AIs have turned their attention outward, away from the galaxy, to alien threats or opportunities unknown.</p>
+
+<p>This inattention is our only hope: a small resistance, too insignificant even to be noticed by the AI central command, has survived. These are the forces you will command. The AI subcommanders will fight you to the death when they see you -- but your glimmer of opportunity comes from quietly subduing those subcommanders without alerting central processing to the danger until it&#39;s too late.</p>
+
+<p>You do have a few things going in your favor. Your ships are much faster. You have safe AI routines to automate defenses and mining outposts. You have production techniques that can churn out fully-outfitted unmanned fighters in seconds. There will never be more than a few thousand of your ships versus tens of thousands of theirs, but through careful strategy you must somehow reach and destroy the heavily-guarded AI cores.</p>
+
+<p>Go forth into the galaxy, steal AI technology, recapture those planets you must in order to achieve your ends, and save what remains of humanity. But draw too much attention to yourself, and the full might of the AI overlords will come crashing down.</p>
+</blockquote>
+
+<h1 id="toc_7"><a href="https://store.steampowered.com/app/250110/Assault_Android_Cactus/">Assault Android Cactus</a></h1>
+
+<h1 id="toc_8"><a href="https://store.steampowered.com/app/250110/Assault_Android_Cactus/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/250110/header.jpg" alt="Assault Android Cactus"></a></h1>
+
+<blockquote>
+<p>When you&#39;re running on battery, make every second count!</p>
+
+<p>Assault Android Cactus is an arcade style twin stick shooter set in a vivid sci fi universe. Junior Constable Cactus is outside her pay grade when she responds to a distress call and ends up stranded on a crippled space freighter under attack by its own robot workers.</p>
+
+<p>Utilising a draining battery mechanic in place of lives, Assault Android Cactus challenges you to think fast and keep the bullets flying, blending the gameplay of western styled arena shooters with aspects of Japanese style bullet hell as you charge head first through transforming stages, massive boss battles and an eclectic cast of characters on the way to saving the day.</p>
+</blockquote>
+
+<h1 id="toc_9"><a href="https://store.steampowered.com/app/274190/Broforce/">Broforce</a></h1>
+
+<h1 id="toc_10"><a href="https://store.steampowered.com/app/274190/Broforce/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/274190/header.jpg" alt="Broforce"></a></h1>
+
+<blockquote>
+<p>When evil threatens the world, the world calls on Broforce - an under-funded, over-powered paramilitary organization dealing exclusively in excessive force. Brace your loins with up to four players to run ‘n’ gun as dozens of different bros and eliminate the opposing terrorist forces that threaten our way of life. Unleash scores of unique weapons and set off incredible chain reactions of fire, napalm, and limbs in the name of freedom. </p>
+</blockquote>
+
+<h1 id="toc_11"><a href="https://store.steampowered.com/app/251130/Chroma_Squad/">Chroma Squad</a></h1>
+
+<h1 id="toc_12"><a href="https://store.steampowered.com/app/251130/Chroma_Squad/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/251130/header.jpg" alt="Chroma Squad"></a></h1>
+
+<blockquote>
+<p>Chroma Squad is a tactical RPG about five stunt actors who decide to quit their jobs and start their own Power Rangers-inspired TV show! Cast actors, purchase equipment and upgrades for your studio, craft weapons and giant Mechas out of cardboard and duct tape. Once the cameras are rolling, you will control your cast of five colored-jumpsuit-clad warriors in dramatic, turn-based battles!</p>
+</blockquote>
+
+<h1 id="toc_13"><a href="https://store.steampowered.com/app/298630/The_Escapists/">The Escapists</a></h1>
+
+<h1 id="toc_14"><a href="https://store.steampowered.com/app/298630/The_Escapists/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/298630/header.jpg" alt="The Escapists"></a></h1>
+
+<blockquote>
+<p>The Escapists is a unique prison sandbox experience with lots of items to craft and combine in your daring quest for freedom. Life in prison will keep you on your toes with the strict rules that you’ll have to break. The guards are out to stop any escape attempts, so you’ll have to avoid suspicious behaviour by attending roll calls, working a prison job and hiding your stolen craftables. </p>
+
+<p>Escaping is what you do best, and you’ll have to prove your skills in a variety of challenging prisons from across the world.</p>
+
+<p>Become an Escapist now!</p>
+</blockquote>
+
+<p>(plus “Alcatraz”, “Duct Tapes are Forever”, “Escape Team”, and “Fhurst Peak” DLCs)</p>
+
+<h1 id="toc_15"><a href="https://store.steampowered.com/app/263460/Girls_Like_Robots/">Girls Like Robots</a></h1>
+
+<h1 id="toc_16"><a href="https://store.steampowered.com/app/263460/Girls_Like_Robots/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/263460/header.jpg" alt="Girls Like Robots"></a></h1>
+
+<blockquote>
+<p>Their faces are the playing pieces. The rules are their emotions!</p>
+
+<p>Ridiculously charming puzzles, wrapped around an epic tale of love and danger, topped off with an authentic old-time stringband soundtrack!</p>
+
+<p>The goal is to put every one next to their friends.</p>
+
+<p>But you can&#39;t please everybody all the time. Sometimes you gotta break hearts to save the day. And the day definitely needs saving: Volcanoes, exploding chickens, planetary invasion and a boy who just wants to dance with a girl.</p>
+</blockquote>
+
+<h1 id="toc_17"><a href="https://store.steampowered.com/app/275390/Guacamelee_Super_Turbo_Championship_Edition/">Guacamelee! Super Turbo Championship Edition</a></h1>
+
+<h1 id="toc_18"><a href="https://store.steampowered.com/app/275390/Guacamelee_Super_Turbo_Championship_Edition/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/275390/header.jpg" alt="Guacamelee! Super Turbo Championship Edition"></a></h1>
+
+<blockquote>
+<p>The definitive version of the smash hit Metroidvania-style action-platformer, Guacamelee! Super Turbo Championship Edition adds new levels, powers, challenges and refinements to the sprawling, ridiculous, Mexican-inspired adventure of the original.</p>
+
+<p>Carlos Calaca has kidnapped El Presidente&#39;s Daughter, and he plans to sacrifice her in order to merge the World of the Living with the World of the Dead.</p>
+
+<p>Juan Aguacate, an agave farmer who stumbles upon a Legendary Luchador mask, must find the strength and courage to become the Hero he&#39;s always dreamed of being and put a stop to this.</p>
+
+<p>Guacamelee! is a Metroidvania-style action-platformer set in a magical world inspired by traditional Mexican culture and folklore. The game features melee combat, parallel dimensions and same-screen co-op. The original Guacamelee! received wide critical acclaim and was a finalist for both IndieCade and the Independent Games Festival&#39;s Excellence in Visual Art award.</p>
+</blockquote>
+
+<p>(I also have a key for Guacamelee Gold Edition, which is apparently not quite as good as the Super Turbo Championship Edition. However, it does have a native Mac version. I can give the Gold Edition to a runner-up, or to a winner who prefers to have a native Mac version.)</p>
+
+<h1 id="toc_19"><a href="https://store.steampowered.com/app/437390/HoPiKo/">HoPiKo</a></h1>
+
+<h1 id="toc_20"><a href="https://store.steampowered.com/app/437390/HoPiKo/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/437390/header.jpg" alt="HoPiKo"></a></h1>
+
+<blockquote>
+<p>A virus, known as the Nanobyte has infected hardware around the globe rendering all systems useless - gaming is dead. The HoPiKo, who ran the games, have been enslaved... It’s time to hook up your power gloves and save your HoPiKo brothers!</p>
+
+<p>HoPiKo is an intense speed run platformer where you get to save gaming. Jump from platform to platform avoiding death, exploiting shortcuts and ripping through 100s of hand-crafted levels, each one dropped into a 5-stage mini run designed to break your mind!</p>
+
+<p>Compete to be the fastest in the world with time based scores, level pars and collectable retro consoles opening unique bonus runs.</p>
+</blockquote>
+
+<h1 id="toc_21"><a href="https://store.steampowered.com/app/375820/Human_Resource_Machine/">Human Resource Machine</a></h1>
+
+<h1 id="toc_22"><a href="https://store.steampowered.com/app/375820/Human_Resource_Machine/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/375820/header.jpg" alt="Human Resource Machine"></a></h1>
+
+<blockquote>
+<p>Program little office workers to solve puzzles. Be a good employee! The machines are coming... for your job.</p>
+
+<p>Human Resource Machine is a puzzle game for nerds. In each level, your boss gives you a job. Automate it by programming your little office worker. If you succeed, you&#39;ll be promoted up to the next level for another year of work in the vast office building. Congratulations!</p>
+
+<p>Don&#39;t worry if you&#39;ve never programmed before - programming is just puzzle solving. If you strip away all the 1&#39;s and 0&#39;s and scary squiggly brackets, programming is actually really simple, logical, beautiful, and something that anyone can understand and have fun with! Are you already an expert? There will be extra challenges for you.</p>
+
+<p>From the creators of World of Goo and Little Inferno. Have fun! Management is watching.</p>
+</blockquote>
+
+<h1 id="toc_23"><a href="https://store.steampowered.com/app/323580/Jotun_Valhalla_Edition/">Jotun</a></h1>
+
+<h1 id="toc_24"><a href="https://store.steampowered.com/app/323580/Jotun_Valhalla_Edition/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/323580/header.jpg" alt="Jotun"></a></h1>
+
+<blockquote>
+<p>Jotun is a hand-drawn action-exploration game set in Norse mythology.</p>
+
+<p>In Jotun, you play Thora, a Viking warrior who died an inglorious death and must prove herself to the Gods to enter Valhalla.</p>
+
+<p>Explore vast regions of Norse Purgatory to find runes to unleash the jotun, giant Norse elementals. Fight them using only your massive two-handed axe, the blessings of the Gods and your skills!</p>
+</blockquote>
+
+<h1 id="toc_25"><a href="Steam">JumpJet Rex</a></h1>
+
+<h1 id="toc_26"><a href="https://store.steampowered.com/app/329460/JumpJet_Rex/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/329460/header.jpg" alt="JumpJet Rex"></a></h1>
+
+<blockquote>
+<p>Test your dinosaur jump-jet skills with a game that redefines the platformer genre, aptly renaming it &quot;platflyer.&quot; Simply put, you&#39;re a t-rex with rocket boots trying to save earth from an incoming asteroid. Do you have what it takes to stop it?</p>
+</blockquote>
+
+<h1 id="toc_27"><a href="https://store.steampowered.com/app/370910/Kathy_Rain/">Kathy Rain</a></h1>
+
+<h1 id="toc_28"><a href="https://store.steampowered.com/app/370910/Kathy_Rain/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/370910/header.jpg" alt="Kathy Rain"></a></h1>
+
+<blockquote>
+<p>Set in the 90&#39;s, Kathy Rain tells the story of a strong-willed journalism major who has to come to terms with her own troubled past as she investigates the mysterious death of her recently deceased grandfather. Armed with her motorcycle, a pack of cigs, and a notepad, Kathy begins to delve into a local mystery surrounding her hometown that will take her on a harrowing journey full of emotional and personal turmoil.</p>
+
+<p>As she follows a trail of clues he left behind, questions emerge… What was Joseph Rain really looking for that night all those years ago? What turned him into a mere shell of a man, confined to a wheelchair? What secret did a suicidal young artist take with her to the grave, and why are so many people in Conwell Springs going mad? The truth is dark and sinister…</p>
+</blockquote>
+
+<h1 id="toc_29"><a href="https://store.steampowered.com/app/330660/Lunas_Wandering_Stars/">Luna’s Wandering Stars</a></h1>
+
+<h1 id="toc_30"><a href="https://store.steampowered.com/app/330660/Lunas_Wandering_Stars/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/330660/header.jpg" alt="Luna’s Wandering Stars"></a></h1>
+
+<blockquote>
+<p>Take control of the powers of the cosmos. Explore your curiosity of space. Luna&#39;s Wandering Stars is a planetary physics puzzler with a full Level Creator/Editor and online level sharing. </p>
+
+<p>An action puzzle game that utilizes real physics to present interesting and challenging cosmic puzzles. Use a variety of powers to control planetary movements, such as changing gravity, designating velocity, applying force, and using mysterious wormholes to move masses around. The goal of every level is to collect enough asteroids using moons to move on to the next level. For a real challenge, collect the rare golden asteroids in every level!</p>
+</blockquote>
+
+<h1 id="toc_31"><a href="https://store.steampowered.com/app/287980/Mini_Metro/">Mini Metro</a></h1>
+
+<h1 id="toc_32"><a href="https://store.steampowered.com/app/287980/Mini_Metro/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/287980/header.jpg" alt="Mini Metro"></a></h1>
+
+<blockquote>
+<p>In Mini Metro, you take on the task of designing the subway layout for a rapidly expanding city. Your city starts with three stations. Draw routes between these stations to connect them with subway lines. Commuters travel along your lines to get around the city as fast as they can. Each station can only hold a handful of waiting commuters so your subway network will need to be well-designed to avoid delays.</p>
+
+<p>The city is growing. More stations are opening, and commuters are appearing faster. The demands on your network are ever-increasing. You&#39;ll be constantly redesigning your lines to maximise efficiency. The new assets you earn every week will help immensely — as long as they&#39;re used wisely.</p>
+
+<p>Eventually your network will fail. Stations will open too quickly. Commuters will crowd the platforms. How long the city keeps moving is up to you.</p>
+</blockquote>
+
+<h1 id="toc_33"><a href="https://store.steampowered.com/app/361300/Mother_Russia_Bleeds/">Mother Russia Bleeds</a></h1>
+
+<h1 id="toc_34"><a href="https://store.steampowered.com/app/361300/Mother_Russia_Bleeds/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/361300/header.jpg" alt="Mother Russia Bleeds"></a></h1>
+
+<blockquote>
+<p>Mother Russia Bleeds is an ultra-violent co-op brawler overflowing with an unmistakable style and unforgettably brutal action for up to four players at once. Set in an alternate U.S.S.R, the story centers on a desperate crew of imprisoned street fighters that must overcome an oppressive criminal authority and forced drug addictions through any means necessary. Battle solo or alongside friends in an exceptional story mode campaign or harden your resolve in the savage Survival Mode.</p>
+</blockquote>
+
+<h1 id="toc_35"><a href="https://store.steampowered.com/app/319470/Ninja_Pizza_Girl/">Ninja Pizza Girl</a></h1>
+
+<h1 id="toc_36"><a href="https://store.steampowered.com/app/319470/Ninja_Pizza_Girl/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/319470/header.jpg" alt="Ninja Pizza Girl"></a></h1>
+
+<blockquote>
+<p>Ninja Pizza Girl is a serious game about self-esteem, bullying and resilience – and pizza delivering ninjas!</p>
+
+<p>Its deeply-woven story follows Gemma, a sixteen-year-old girl working as a pizza delivery ninja for her father’s independent Pizzeria. In a world where slums teeter on top of skyscrapers, where powerful mega-corporations exploit the poor and where quality pizza is hard to come by, Gemma must fight to keep her ideals, her family and their business intact in face of the most merciless enemies known to any teenage girl – other teenagers.</p>
+</blockquote>
+
+<h1 id="toc_37"><a href="https://store.steampowered.com/app/368730/No_Time_To_Explain_Remastered/">No Time To Explain</a></h1>
+
+<h1 id="toc_38"><a href="https://store.steampowered.com/app/368730/No_Time_To_Explain_Remastered/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/368730/header.jpg" alt="No Time To Explain"></a></h1>
+
+<blockquote>
+<p>&quot;I Am You From The Future! No Time To Explain, Follow m-OH CHRIST!&quot;</p>
+
+<p>Chase your future self through time and alternate realities while fighting giant monsters, collecting hats, and eating cake! No Time To Explain is a game about Time Paradoxes, Jetpack Guns and Ribs In People&#39;s Eyes. It&#39;s a comedy platformer featuring great music, voice acting and gameplay that becomes more ridiculous as you go.</p>
+</blockquote>
+
+<h1 id="toc_39"><a href="https://store.steampowered.com/app/242680/Nuclear_Throne/">Nuclear Throne</a></h1>
+
+<h1 id="toc_40"><a href="https://store.steampowered.com/app/242680/Nuclear_Throne/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/242680/header.jpg" alt="Nuclear Throne"></a></h1>
+
+<blockquote>
+<p>Nuclear Throne is a post-apocalyptic roguelike-like top-down shooter. Not &#39;the final hope of humanity&#39; post-apocalyptic, but &#39;humanity is extinct and mutants and monsters now roam the world&#39; post-apocalyptic. Fight your way through the wastelands with powerful weaponry, collecting radiation to mutate some new limbs and abilities. All these things and more you could do if only you were good at this game. Can you reach the Nuclear Throne?</p>
+</blockquote>
+
+<h1 id="toc_41"><a href="https://store.steampowered.com/app/319480/Odallus_The_Dark_Call/">Odallus: The Dark Call</a></h1>
+
+<h1 id="toc_42"><a href="https://store.steampowered.com/app/319480/Odallus_The_Dark_Call/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/319480/header.jpg" alt="Odallus: The Dark Call"></a></h1>
+
+<blockquote>
+<p>The old gods have forgotten this land. No one could save our people when darkness started spreading and collecting human souls for its army. </p>
+
+<p>Odallus is a classic exploration/action game, inspired by Ghosts’n Goblins, Demon’s Crest and Castlevania. Player takes place of Haggis, a warrior tired of fight who must wield his sword once more to rescue his son from Darkness.</p>
+</blockquote>
+
+<h1 id="toc_43"><a href="https://store.steampowered.com/app/25000/Overgrowth/">Overgrowth</a></h1>
+
+<h1 id="toc_44"><a href="https://store.steampowered.com/app/25000/Overgrowth/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/25000/header.jpg" alt="Overgrowth"></a></h1>
+
+<blockquote>
+<p>As a lightning-fast acrobatic ninja rabbit, you can choose how to approach each encounter. Do you want to pick off enemies one at a time like the killer in a slasher film? Dive into the thick of it and fight whole groups in a frontal assault? Steal the most powerful weapon you can find, and turn it on the rest?</p>
+
+<p>If you die, there is never any load time; you can try again instantly! As your skills improve, you&#39;ll see that the game is not about winning. It&#39;s about experimenting to make the coolest action scenes that you can. Every design decision is made with that in mind, from the mouselook camera to the context-sensitive combat controls.</p>
+
+<p>After completing the story modes, you can try out all the mods that players have created with the integrated editor! If you want to play as a human character in a city, or try a whole new campaign, or even fly around as a bat, there&#39;s probably already a mod that makes that happen.</p>
+</blockquote>
+
+<p>(plus an access code for the “Overgrowth Secret Preorder Forum”)</p>
+
+<h1 id="toc_45"><a href="https://store.steampowered.com/app/487350/Pirate_Pop_Plus/">Pirate Pop Plus</a></h1>
+
+<h1 id="toc_46"><a href="https://store.steampowered.com/app/487350/Pirate_Pop_Plus/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/487350/header.jpg" alt="Pirate Pop Plus"></a></h1>
+
+<blockquote>
+<p>Pirate Pop Plus is a super addictive, gravity-defying, score-chasing, bubble-busting, retro-style arcade game. </p>
+
+<p>Join Pete Jr on his quest to defeat the nefarious Bubble Pirate, an evil villain who has trapped the innocent townsfolk in bubbles! </p>
+
+<p>Dodge and pop bubbles with your anchor while collecting power-ups and managing Bubble Pirate’s constant gravity-switching mischief! When you feel at your Piratey-est, test your skill in the ultra-challenging Hyper Mode... The game may be faster and harder, but you&#39;ll find treasures beyond your wildest dreams. Coins as far as the eye can see! </p>
+
+<p>Collect coins to unlock content in the game’s shop like new music, new faceplates, buttons, backlights, and even characters for your bubble-popping mayhem! Yarr!</p>
+</blockquote>
+
+<h1 id="toc_47"><a href="https://store.steampowered.com/app/328500/Potatoman_Seeks_the_Troof/">Potatoman Seeks the Troof</a></h1>
+
+<h1 id="toc_48"><a href="https://store.steampowered.com/app/328500/Potatoman_Seeks_the_Troof/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/328500/header.jpg" alt="Potatoman Seeks the Troof"></a></h1>
+
+<blockquote>
+<p>Potatoman Seeks the Troof is a challenging potatosophical platforming adventure from Pixeljam Games, creator of the classic prehistoric racer DINO RUN.</p>
+
+<p>Potatoman will put your reflexes and worldview to the test as you journey through scorching deserts, dark forests, busy cities, the tallest mountains and eventually your own potato-consciousness in search of the ultimate answer. Are you prepared to face the TROOF?</p>
+</blockquote>
+
+<h1 id="toc_49"><a href="https://store.steampowered.com/app/234630/Project_CARS/">Project CARS</a></h1>
+
+<h1 id="toc_50"><a href="https://store.steampowered.com/app/234630/Project_CARS/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/234630/header.jpg" alt="Project CARS"></a></h1>
+
+<blockquote>
+<p>Project CARS is the ultimate driver journey! </p>
+
+<p>Guided, tested, and approved by a passionate community of racing fans and real-life drivers, Project CARS represents the next-generation of racing simulation as the ultimate combination of fan desire and developer expertise.</p>
+
+<p>Discover an unrivaled immersion fuelled by world-class graphics and handling that allows you to truly feel the road. Create a driver, pick from a huge variety of motorsports in a dynamic career mode and write your own tale in an intense online multiplayer. </p>
+
+<p>Featuring the largest track roster of any recent racing game with a ground-breaking dynamic time of day &amp; weather system, deep tuning &amp; pit stop functionality, and support for Oculus Rift and 12K ultra HD resolution, Project CARS leaves the competition behind in the dust.</p>
+</blockquote>
+
+<h1 id="toc_51"><a href="https://store.steampowered.com/app/290040/Retro_Game_Crunch/">Retro Game Crunch</a></h1>
+
+<h1 id="toc_52"><a href="https://store.steampowered.com/app/290040/Retro_Game_Crunch/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/290040/header.jpg" alt="Retro Game Crunch"></a></h1>
+
+<blockquote>
+<p>Retro Game Crunch is a series of 7 games, full of the charm and challenge of the 8-bit generation. Each world feels like an authentic NES classic.</p>
+</blockquote>
+
+<h1 id="toc_53"><a href="https://store.steampowered.com/app/270450/Robot_RollerDerby_Disco_Dodgeball/">Robot Roller-Derby Disco Dodgeball</a></h1>
+
+<h1 id="toc_54"><a href="https://store.steampowered.com/app/270450/Robot_RollerDerby_Disco_Dodgeball/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/270450/header.jpg" alt="Robot Roller-Derby Disco Dodgeball"></a></h1>
+
+<blockquote>
+<p>Disco Dodgeball combines the one-hit-kill projectile combat of classic dodgeball with flowing skateboard-style movement and neon-drenched dance club arenas to create a unique, exhilarating, and incredibly fun FPS sports experience. </p>
+
+<p>Dodge, deflect and catch enemy fire as you perform ridiculous aerial stunt shots with your mustachio&#39;d unicycle robot. Play a wide variety of classic, expert, and custom game modes in offline singleplayer, local multiplayer, or online multilpayer matches.</p>
+</blockquote>
+
+<h1 id="toc_55"><a href="https://store.steampowered.com/app/215510/Rocketbirds_Hardboiled_Chicken/">Rocketbirds: Hardboiled Chicken</a></h1>
+
+<h1 id="toc_56"><a href="https://store.steampowered.com/app/215510/Rocketbirds_Hardboiled_Chicken/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/215510/header.jpg" alt="Rocketbirds: Hardboiled Chicken"></a></h1>
+
+<blockquote>
+<p>Annihilate an evil penguin regime in this cinematic platform adventure game offering full solo and co-op campaigns.</p>
+
+<p>Set out on a mission to assassinate the totalitarian penguin leader as Hardboiled Chicken. Destroy enemies with a slew of weapons and illuminate the secrets to his past while uncovering the real enemies of Albatropolis. Master fowl play in the co-op campaign as a pair of Budgie commandos on a mission to save the general’s daughter. Many lives will be destroyed, countless penguins will die!</p>
+</blockquote>
+
+<h1 id="toc_57"><a href="https://store.steampowered.com/app/289760/ROCKETSROCKETSROCKETS/">ROCKETSROCKETSROCKETS</a></h1>
+
+<h1 id="toc_58"><a href="https://store.steampowered.com/app/289760/ROCKETSROCKETSROCKETS/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/289760/header.jpg" alt="ROCKETSROCKETSROCKETS"></a></h1>
+
+<blockquote>
+<p>ROCKETSROCKETSROCKETS is a game where you fly ROCKETS that rocket ROCKETS at other ROCKETS! The ultimate rush of arcade arena action, with the fluidity and amazing feel of soaring through space.</p>
+</blockquote>
+
+<h1 id="toc_59"><a href="https://store.steampowered.com/app/246680/Secrets_of_Rtikon/">Secrets of Rætikon</a></h1>
+
+<h1 id="toc_60"><a href="https://store.steampowered.com/app/246680/Secrets_of_Rtikon/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/246680/header.jpg" alt="Secrets of Rætikon"></a></h1>
+
+<blockquote>
+<p>You find yourself alone in the mountains of the Alps. Discover strange contraptions, wild animals and the mysteries of an ancient culture. Uncover the Secrets of Rætikon in an atmospheric, open-world 2D game in which you fly like a bird and explore an uncharted world.</p>
+
+<p>Secrets of Rætikon is an action-focussed exploration game with an open world. Fly through the savage mountains of the Alps and collect parts of ancient machines. The world is rich in interactivity. Trees, rocks, plants and animals – everything is physics based and can be grabbed and dragged around.</p>
+
+<p>Hostile animals protect their habitats and interact with you as well as each other. Use this ecosystem to your advantage: drag a bird of prey to another predator and they attack each other; grab a robin and feed it to a buzzard – it will attack the poor bird instead of you; defend yourself by wielding spiked plants or by pushing foes into thornbushes.</p>
+</blockquote>
+
+<h1 id="toc_61"><a href="https://store.steampowered.com/app/332530/Shutshimi/">Shütshimi</a></h1>
+
+<h1 id="toc_62"><a href="https://store.steampowered.com/app/332530/Shutshimi/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/332530/header.jpg" alt="Shütshimi"></a></h1>
+
+<blockquote>
+<p>Shütshimi is a randomized shoot&#39;em up about a muscle-bound fish with memory problems defending the seven seas.</p>
+
+<p>Armed with your trusty bullet-morphing shotgun, defeat or navigate through waves of enemies and collect powerups as you battle your way through each of the game&#39;s bosses. But there&#39;s a catch (there&#39;s always a catch): you&#39;ve been cursed with an incredibly short attention span. Combat waves and upgrade cycles only last 10 seconds a piece, so you&#39;d better act fast!</p>
+</blockquote>
+
+<h1 id="toc_63"><a href="https://store.steampowered.com/app/460700/Song_of_the_Deep/">Song of the Deep</a></h1>
+
+<h1 id="toc_64"><a href="https://store.steampowered.com/app/460700/Song_of_the_Deep/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/460700/header.jpg" alt="Song of the Deep"></a></h1>
+
+<blockquote>
+<p>Song of the Deep is a metroidvania-style action-adventure game following a girl’s quest into the unknown to find her missing father. Combining discovery, skill, and suspense with an unforgettable narrative, this underwater journey will challenge players to explore, experiment, and skillfully navigate a vast ocean landscape.</p>
+</blockquote>
+
+<h1 id="toc_65"><a href="https://store.steampowered.com/app/487250/Spaera/">Spaera</a></h1>
+
+<h1 id="toc_66"><a href="https://store.steampowered.com/app/487250/Spaera/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/487250/header.jpg" alt="Spaera"></a></h1>
+
+<blockquote>
+<p>SPAERA is a head-to-head puzzle fighting game, using an unique match-3 cascading mechanic as its core system. The world of SPAERA is heavily inspired by characters, gameplay and themes from games that we loved to play as we were growing up. We&#39;ve created a roster of eight original characters that you can select, each with his or her own individual story. Players can battle the computer in the game&#39;s campaign mode, or against live opponents in local and online matchmaking.</p>
+</blockquote>
+
+<h1 id="toc_67"><a href="https://store.steampowered.com/app/210170/Spirits/">Spirits</a></h1>
+
+<h1 id="toc_68"><a href="https://store.steampowered.com/app/210170/Spirits/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/210170/header.jpg" alt="Spirits"></a></h1>
+
+<blockquote>
+<p>Spirits is a relaxing action-puzzle game with a dynamic wind and world environment. Autumn is quickly approaching, and the spirits of fallen leaves are setting out on their journey home. Guide them by changing how the wind blows or by rebuilding the ground. Each spirit can be sacrificed to perform one of four actions – build a bridge of leaves, create a blowing cloud, dig tunnels, or block wind currents in an area. Use your actions wisely or you will run out of spirits. In each level it&#39;s up to you to find your own creative solution on how to get the spirits to the goal.</p>
+</blockquote>
+
+<h1 id="toc_69"><a href="https://store.steampowered.com/app/311720/Sproggiwood/">Sproggiwood</a></h1>
+
+<h1 id="toc_70"><a href="https://store.steampowered.com/app/311720/Sproggiwood/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/311720/header.jpg" alt="Sproggiwood"></a></h1>
+
+<blockquote>
+<p>Bring civilization to Sproggiwood, a story-driven, turn-based roguelike set in a humorous world inspired by Finnish mythology. Grow your civilization and plunder procedural dungeons with six unique classes. Outsmart mischievous monsters who work together in unexpected ways. No two dungeon dives are alike.</p>
+</blockquote>
+
+<h1 id="toc_71"><a href="https://store.steampowered.com/app/221910/The_Stanley_Parable/">The Stanley Parable</a></h1>
+
+<h1 id="toc_72"><a href="https://store.steampowered.com/app/221910/The_Stanley_Parable/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/221910/header.jpg" alt="The Stanley Parable"></a></h1>
+
+<blockquote>
+<p>The Stanley Parable is a first person exploration game. You will play as Stanley, and you will not play as Stanley. You will follow a story, you will not follow a story. You will have a choice, you will have no choice. The game will end, the game will never end. Contradiction follows contradiction, the rules of how games should work are broken, then broken again. This world was not made for you to understand. </p>
+
+<p>But as you explore, slowly, meaning begins to arise, the paradoxes might start to make sense, perhaps you are powerful after all. The game is not here to fight you; it is inviting you to dance.</p>
+</blockquote>
+
+<h1 id="toc_73"><a href="https://store.steampowered.com/app/413150/Stardew_Valley/">Stardew Valley</a></h1>
+
+<h1 id="toc_74"><a href="https://store.steampowered.com/app/413150/Stardew_Valley/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/413150/header.jpg" alt="Stardew Valley"></a></h1>
+
+<blockquote>
+<p>Stardew Valley is an open-ended country-life RPG! </p>
+
+<p>You&#39;ve inherited your grandfather&#39;s old farm plot in Stardew Valley. Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won&#39;t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared. The community center, once the town&#39;s most vibrant hub of activity, now lies in shambles. But the valley seems full of opportunity. With a little dedication, you might just be the one to restore Stardew Valley to greatness!</p>
+</blockquote>
+
+<h1 id="toc_75"><a href="https://store.steampowered.com/app/242640/Styx_Master_of_Shadows/">Styx: Master of Shadows</a></h1>
+
+<h1 id="toc_76"><a href="https://store.steampowered.com/app/242640/Styx_Master_of_Shadows/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/242640/header.jpg" alt="Styx: Master of Shadows"></a></h1>
+
+<blockquote>
+<p>Styx: Master of Shadows is an infiltration game with RPG elements taking place in a dark fantasy universe, where you sneak, steal and assassinate your way through as Styx, a Goblin two-centuries of age.</p>
+
+<p>Deep inside the vertiginous and multi-layered forsaken Tower of Akenash, where Humans and Elves protect the World-Tree, source of the Amber – a powerful and magical golden sap – is hidden Styx’ chance to understand his true origin... and to make a fortune at the same time.</p>
+
+<p>Prowl through the huge, miles-high Tower of Akenash, completing various missions (assassination, information recovery, etc.) and avoiding detection. Progress in the shadows, assassinate your targets in close combat, or orchestrate «accidents». RPG mechanics let you unlock new powerful skills, impressive special moves, and an optimized equipment. Amber will grant you spectacular powers such as invisibility, «amber vision», and the ability to clone yourself. Explore the levels to discover every bit of information about your past, and steal prized treasures to acquire equipment upgrades. Embrace the shadows!</p>
+</blockquote>
+
+<h1 id="toc_77"><a href="https://store.steampowered.com/app/345860/Super_Galaxy_Squadron_EX_Turbo/">Super Galaxy Squadron EX Turbo</a></h1>
+
+<h1 id="toc_78"><a href="https://store.steampowered.com/app/345860/Super_Galaxy_Squadron_EX_Turbo/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/345860/header.jpg" alt="Super Galaxy Squadron EX Turbo"></a></h1>
+
+<blockquote>
+<p>Super Galaxy Squadron is a fast-paced vertical shooter designed for human beings as well as shmup veterans. Featuring multiple game modes, a challenging but merciful difficulty curve, forgiving health system, and seventeen playable ships.</p>
+</blockquote>
+
+<h1 id="toc_79"><a href="https://store.steampowered.com/app/221640/Super_Hexagon/">Super Hexagon</a></h1>
+
+<h1 id="toc_80"><a href="https://store.steampowered.com/app/221640/Super_Hexagon/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/221640/header.jpg" alt="Super Hexagon"></a></h1>
+
+<blockquote>
+<p>Super Hexagon is a minimal action game by Terry Cavanagh, with music by Chipzel.</p>
+</blockquote>
+
+<h1 id="toc_81"><a href="https://store.steampowered.com/app/231160/The_Swapper/">The Swapper</a></h1>
+
+<h1 id="toc_82"><a href="https://store.steampowered.com/app/231160/The_Swapper/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/231160/header.jpg" alt="The Swapper"></a></h1>
+
+<blockquote>
+<p>What if someone knew your mind better than you did?</p>
+
+<p>The Swapper is an award-winning, narrative driven puzzle game set in the furthest reaches of space.</p>
+
+<p>The Swapper takes place in an isolated and atmospheric sci-fi world. Players wield an experimental device which allows them to create clones of themselves, swapping their entire consciousness into new bodies to overcome the challenges of the environment.</p>
+</blockquote>
+
+<h1 id="toc_83">System Shock Pack</h1>
+
+<h2 id="toc_84">Includes <a href="https://store.steampowered.com/app/410710/System_Shock_Enhanced_Edition/">System Shock: Enhanced Edition</a> and <a href="https://store.steampowered.com/app/238210/System_Shock_2/">System Shock 2</a></h2>
+
+<h1 id="toc_85"><a href="https://store.steampowered.com/app/410710/System_Shock_Enhanced_Edition/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/410710/header.jpg" alt="System Shock: Enhanced Edition"></a></h1>
+
+<blockquote>
+<p>Re-discover what made System Shock the first of it&#39;s kind, a ground breaking immersive sim that would inspire a generation of games to come....</p>
+
+<p>Twenty one years after its first release, System Shock is back!</p>
+</blockquote>
+
+<h1 id="toc_86"><a href="https://store.steampowered.com/app/238210/System_Shock_2/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/238210/header.jpg" alt="System Shock 2"></a></h1>
+
+<blockquote>
+<p>&quot;Remember, it is my will that guided you here. It is my will that gave you your cybernetic implants, the only beauty in that meat you call a body. If you value that meat... you will do as I tell you.&quot; </p>
+
+<p>The cult classic sci-fi horror FPS-RPG has returned.</p>
+
+<p>You awake from the cold chill of your cryo-tube to discover cybernetic implants grafted to your flesh and the crew of the starship Von Braun slaughtered. The infected roam the halls, their screams and moans beckoning you to join them as the rogue artificial intelligence known as SHODAN taunts and ridicules your feeble attempt to unravel the horrifying mystery of the derelict starship Von Braun.</p>
+</blockquote>
+
+<h1 id="toc_87"><a href="https://store.steampowered.com/app/307580/Technobabylon/">Technobabylon</a></h1>
+
+<h1 id="toc_88"><a href="https://store.steampowered.com/app/307580/Technobabylon/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/307580/header.jpg" alt="Technobabylon"></a></h1>
+
+<blockquote>
+<p>The year 2087 is upon us — a future where genetic engineering is the norm, the addictive Trance has replaced almost any need for human interaction, and an omnipresent AI named Central powers the city. Its all-seeing CEL police force keeps tabs on everyone, including three people who are about to meet their maker.</p>
+
+<ul>
+<li><p>Charlie Regis, an agent of the city’s all-seeing secret police, finds himself blackmailed with the lives of his unborn children. Pushed to the limits by his deceit and his past, how far is he willing to go to save his legacy?</p></li>
+<li><p>Latha Sesame, a jobless agoraphobe addicted to the Trance, has become targeted for assassination. Without knowing who to trust, she must face the dangers of “meatspace” and survive a fate that has invisibly ruled her entire life.</p></li>
+<li><p>Max Lao, a tech-savvy case officer who joined CEL to forget her criminal past. Now she finds herself torn between two loyalties. When she’s asked to apprehend her best friend and partner, she must choose to follow her friend or the law.</p></li>
+</ul>
+
+<p>As these three struggle to save themselves, they will soon discover a string of conspiracies that threatens not only their lives, but everything they think they know.</p>
+</blockquote>
+
+<h1 id="toc_89"><a href="https://store.steampowered.com/app/266110/Tower_of_Guns/">Tower of Guns</a></h1>
+
+<h1 id="toc_90"><a href="https://store.steampowered.com/app/266110/Tower_of_Guns/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/266110/header.jpg" alt="Tower of Guns"></a></h1>
+
+<blockquote>
+<p>Tower of Guns is a fast paced first-person-shooter for the twitch gamer... with a few randomized elements to keep it fresh with each playthrough. It&#39;s a short burst &quot;Lunch Break FPS&quot;... not unlike Binding of Isaac mixed with Doom 2. Tower of Guns was made by a guy named Joe (with his brother Mike composing the music).</p>
+</blockquote>
+
+<h1 id="toc_91"><a href="https://store.steampowered.com/app/70300/VVVVVV/">VVVVVV</a></h1>
+
+<h1 id="toc_92"><a href="https://store.steampowered.com/app/70300/VVVVVV/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/70300/header.jpg" alt="VVVVVV"></a></h1>
+
+<blockquote>
+<p>Help! Everyone has been teleported away randomly! As the heroic Captain Viridian, it&#39;s up to you to find your friends, bring them back to safety, and save the universe!</p>
+
+<p>VVVVVV is a platform game all about exploring one simple mechanical idea - what if you reversed gravity instead of jumping?</p>
+
+<p>The game is designed not to artificially gate your progress. In VVVVVV there are no locks, no power-ups, no switches, nothing to stop you progressing except the challenges themselves.</p>
+</blockquote>
+
+<h1 id="toc_93"><a href="https://store.steampowered.com/app/235540/Warhammer_End_Times__Vermintide/">Warhammer: End Times - Vermintide</a></h1>
+
+<h1 id="toc_94"><a href="https://store.steampowered.com/app/235540/Warhammer_End_Times__Vermintide/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/235540/header.jpg" alt="Warhammer: End Times - Vermintide"></a></h1>
+
+<blockquote>
+<p>Vermintide is a co-operative action first person shooter and melee combat adventure set in the End Times of the iconic Warhammer Fantasy world. </p>
+
+<p>Vermintide takes place in and around Ubersreik, a city overrun by Skaven. You will assume the role of one of five heroes, each featuring different play-styles, abilities, gear and personality. Working cooperatively, you must use their individual attributes to survive an apocalyptic invasion from the hordes of relentless rat-men, known as the Skaven. Battles will take place across a range of environments stretching from the top of the Magnus Tower to the bowels of the Under Empire.</p>
+</blockquote>
+
+<p>(plus “Schluesselschloss” and “The Outsider” DLCs)</p>
+
+<h1 id="toc_95"><a href="https://store.steampowered.com/app/377360/Western_Press/">Western Press</a></h1>
+
+<h1 id="toc_96"><a href="https://store.steampowered.com/app/377360/Western_Press/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/377360/header.jpg" alt="Western Press"></a></h1>
+
+<blockquote>
+<p>Based on a true story, Western Press is the most historically accurate frontier dueling game available for PC and Mac. Probably. Competing in tournaments of up to 16 players (or bots), duelists both online and off will face each other in rapid fire, 1v1 sprints to finally settle who can press a random string of ten buttons the fastest.</p>
+</blockquote>
+
+<p>(plus “Mk Cans II Character” DLC)</p>
+
+<h1 id="toc_97"><a href="https://store.steampowered.com/app/22000/World_of_Goo/">World of Goo</a></h1>
+
+<h1 id="toc_98"><a href="https://store.steampowered.com/app/22000/World_of_Goo/"><img src="https://steamcdn-a.akamaihd.net/steam/apps/22000/header.jpg" alt="World of Goo"></a></h1>
+
+<blockquote>
+<p>World of Goo is a multiple award winning physics based puzzle / construction game made entirely by two guys. Drag and drop living, squirming, talking, globs of goo to build structures, bridges, cannonballs, zeppelins, and giant tongues. The millions of Goo Balls that live in the beautiful World of Goo are curious to explore - but they don&#39;t know that they are in a game, or that they are extremely delicious.</p>
+</blockquote>
+</div>
+
+</body>
+
+</html>
