@@ -10,375 +10,309 @@
 
 <style type="text/css">
 /*
-This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
+This document has been created with Marked.app <http://marked2app.com>, Copyright 2013 Brett Terpstra
+Content is property of the document author
 Please leave this notice in place, along with any additional credits below.
 ---------------------------------------------------------------
-Title: Avenue
-Author: Bram de Haan <http://atelierbramdehaan.nl>
-Description: modern retro
- */
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-a img {
-  border: none;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-button, input {
-  line-height: normal;
-}
-button, input, select, textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  /* vertical-align: middle; */
-}
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  cursor: pointer;
-  /* overflow: visible; */
-}
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
+Title:  Swiss
+Author:  Brett Terpstra
+Description:  Clean, Swiss typography with no frills.
+*/
 body {
   -webkit-font-smoothing: antialiased;
-  padding: 0 !important;
-}
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.3125em;
+  margin: 30px 0 0;
+  padding: 0; }
+
 #wrapper {
-  margin-bottom: 0;
+  padding: 20px; }
+
+li {
+  font-size: 110%; }
+  li li {
+    font-size: 100%; }
+  li p {
+    font-size: 100%;
+    margin: .5em 0; }
+
+h1 {
+  color: black;
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 0.875em;
+  margin-bottom: 0.875em; }
+
+h2 {
+  color: #111111;
+  margin: 0;
+  font-size: 1.375em;
+  line-height: 0.9545454545454546em;
+  margin-bottom: 0.9545454545454546em; }
+
+h3 {
+  color: #111111;
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1.05em;
+  margin-bottom: 1.05em; }
+
+h4 {
+  color: #111111;
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.1666666666666667em;
+  margin-bottom: 1.1666666666666667em; }
+
+h5 {
+  color: #111111;
+  font-size: 1.15em;
+  line-height: 1.3em;
+  margin: 1.3em 0; }
+
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1.5em 0; }
+
+body, p, td, div {
+  color: #111111;
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  word-wrap: break-word; }
+
+body {
+  padding: 30px;
 }
+
+a {
+  color: #6600ff;
+  text-decoration: underline;
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out; }
+  a:hover {
+    color: #b99fdf; }
+
+.footnote {
+  color: #0d6ea1;
+  font-size: .8em;
+  vertical-align: super; }
+
 #wrapper img {
   max-width: 100%;
-  height: auto;
-}
-#wrapper dd {
-  margin-bottom: 1em;
-}
-#wrapper li > p:first-child {
-  margin: 0;
-}
-#wrapper caption, #wrapper col, #wrapper colgroup, #wrapper table, #wrapper tbody, #wrapper td, #wrapper tfoot, #wrapper th, #wrapper thead, #wrapper tr {
-  border-spacing: 0;
-}
-#wrapper table {
+  height: auto; }
+
+dd {
+  margin-bottom: 1em; }
+
+li > p:first-child {
+  margin: 0; }
+
+ul ul, ul ol {
+  margin-bottom: .4em; }
+
+caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr {
+  border-spacing: 0; }
+
+table {
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-collapse: collapse;
   display: table;
   empty-cells: hide;
-  margin: -1px 0 23px;
+  margin: -1px 0 1.3125em;
   padding: 0;
-  table-layout: fixed;
-  width: 100%;
-}
-#wrapper caption {
+  table-layout: fixed; }
+
+caption {
   display: table-caption;
-  font-weight: 700;
-}
-#wrapper col {
-  display: table-column;
-}
-#wrapper colgroup {
-  display: table-column-group;
-}
-#wrapper tbody {
-  display: table-row-group;
-}
-#wrapper tfoot {
-  display: table-footer-group;
-}
-#wrapper thead {
-  display: table-header-group;
-  border-bottom: solid 1px #999;
-}
-#wrapper td, #wrapper th {
-  display: table-cell;
-}
-#wrapper tr {
-  display: table-row;
-}
-#wrapper table th, #wrapper table td {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  padding: 0 1em;
-}
-#wrapper dt, #wrapper th {
-  font-weight: 700;
-}
-#wrapper dd {
-  padding-left: 1.4em;
-}
-#wrapper table tr:nth-child(even) {
-  background: rgba(200, 200, 200, 0.25);
-}
-#wrapper figure {
+  font-weight: 700; }
+
+col {
+  display: table-column; }
+
+colgroup {
+  display: table-column-group; }
+
+tbody {
+  display: table-row-group; }
+
+tfoot {
+  display: table-footer-group; }
+
+thead {
+  display: table-header-group; }
+
+td, th {
+  display: table-cell; }
+
+tr {
+  display: table-row; }
+
+table th, table td {
+  font-size: 1.1em;
+  line-height: 23px;
+  padding: 0 1em; }
+
+table thead {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+
+table tbody {
+  background: rgba(0, 0, 0, 0.05); }
+
+table tfoot {
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+figure {
   display: inline-block;
   position: relative;
-  margin: 1em 0 2em;
-}
-#wrapper figcaption {
-  font-family: AvenirNext-Italic, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
+  margin: 1em 0 2em; }
+
+figcaption {
   font-style: italic;
   text-align: center;
-}
-#wrapper figure:hover > figcaption {
-  /* background: rgba(0,0,0,1) */
-}
-#wrapper pre {
-  display: block;
-  margin: 1.4em auto;
-  background: #FAF8F5;
-  padding: 15px 10px 10px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  border: solid 1px #ddd;
-  font-family: Consolas, Menlo, Monaco, monospace !important;
-  font-size: .875rem;
-  max-width: 90%;
-}
-.poetry #wrapper pre {
+  background: white;
+  color: #666666;
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  width: 98%;
+  padding: 1%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+figure:hover > figcaption {
+  /* background: rgba(0,0,0,1) */ }
+
+.poetry pre {
   display: block;
   font-family: Georgia, Garamond, serif !important;
   font-size: 110% !important;
   font-style: italic;
-  line-height: 1.6;
-  margin-left: 1em;
-}
-.poetry #wrapper pre code {
-  font-family: Georgia, Garamond, serif !important;
+  line-height: 1.6em;
+  margin-left: 1em; }
+  .poetry pre code {
+    font-family: Georgia, Garamond, serif !important;
+    word-break: break-all;
+    word-break: break-word;
+    /* Non standard for webkit */
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    white-space: pre-wrap; }
 
-}
-#wrapper sup, #wrapper sub, #wrapper a.footnote {
+blockquote p {
+  font-size: 110%;
+  font-style: italic;
+  line-height: 1.6em; }
+
+sup, sub, a.footnote {
   font-size: 1.4ex;
   height: 0;
   line-height: 1;
   position: relative;
-  vertical-align: super;
-}
-#wrapper sub {
+  vertical-align: super; }
+
+sub {
   vertical-align: sub;
-  top: -1px;
-}
-#wrapper .footnote {
-  font-size: .8rem;
-  vertical-align: super;
-}
-#wrapper .footnotes p {
-  font-size: 1.9ex;
-}
-#wrapper ul ul {
-  margin-left: 1em;
-}
+  top: -1px; }
+
+p, h5 {
+  font-size: 1.1429em;
+  line-height: 1.3125em;
+  margin: 1.3125em 0; }
+
+dt, th {
+  font-weight: 700; }
+
+table tr:nth-child(odd), table th:nth-child(odd), table td:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.06); }
+
+table tr:nth-child(even), table td:nth-child(even) {
+  background: rgba(200, 200, 200, 0.25); }
 
 @media print {
   body {
-    overflow: auto;
-  }
+    overflow: auto; }
 
   img, pre, blockquote, table, figure, p {
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   #wrapper {
-    background: #fff;
-    color: #111;
+    background: white;
+    color: #303030;
     font-size: 85%;
     padding: 10px;
     position: relative;
-    text-indent: 0;
-  }
-}
-
+    text-indent: 0; } }
 @media screen {
-  .inverted #wrapper, .inverted {
-    background: #222;
-  }
+  .inverted {
+    background: #252a2a; }
+    .inverted #wrapper {
+      background: #252a2a;
+      color: #eeeeee; }
+    .inverted hr {
+      border-color: #333f40 !important; }
+    .inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted th, .inverted .math, .inverted caption, .inverted dt, .inverted dd {
+      color: #eeeeee; }
+    .inverted pre code {
+      color: #111; }
+    .inverted table {
+      background: none; }
+      .inverted table tr:nth-child(odd), .inverted table td:nth-child(odd) {
+        background: none; }
+    .inverted a {
+      color: #acd1d5; }
 
-  .inverted hr {
-    border-color: #999 !important;
-  }
+  ::selection {
+    background: rgba(157, 193, 200, 0.5); }
 
-  .inverted p, .inverted td, .inverted li, .inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6, .inverted pre, .inverted code, .inverted th, .inverted .math, .inverted caption, .inverted dd, .inverted dt {
-    color: #eee !important;
-  }
+  h1::selection {
+    background-color: rgba(45, 156, 208, 0.3); }
 
-  .inverted table tr:nth-child(odd), .inverted table th:nth-child(odd), .inverted table td:nth-child(odd) {
-    background: none;
-  }
+  h2::selection {
+    background-color: rgba(90, 182, 224, 0.3); }
 
-  .inverted a {
-    color: #ff5778;
-  }
-}
-.max-width {
-  max-width: 100%;
-  height: auto;
-}
-/* ::Base styles Almost exclusively single element selectors */
-/* ------------------------------------------------------------ */
-html {
-  font-size: 100%;
-}
-body {
-  font: 100%/1.388 AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
-  color: #111;
-  padding: 2.5% 5% 5% !important;
-}
-a {
-  color: crimson;
-}
-a:hover, a:focus, a:active {
-  color: #ff2450;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: AvenirNextCondensed-DemiBold, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
-  /* margin: 0; */
-  padding: .5em 0 0;
-}
-h2, h3, h4, h5 {
-  border-bottom: 1px solid #777;
-}
-h1 {
-  font-size: 2.25rem;
-  line-height: 1.11111;
-}
-h2 {
-  font-size: 1.875rem;
-  line-height: 1.33333;
-}
-h3 {
-  font-size: 1.375rem;
-  line-height: 1.45455;
-}
-h4 {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-h5 {
-  font-size: 1.125rem;
-  line-height: 1.33333;
-}
-h6 {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-pre, label {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-p {
-  font-size: 1.388rem;
-  line-height: 1.33333;
-  /* margin: 0; */
-  padding: .5em 0;
-  max-width: 30em;
-}
-h2 + p,
-h3 + p,
-h4 + p,
-h5 + p {
-  padding-top: 0;
-  margin-top: 1px;
-  border-top: 1px solid #999;
-}
-ol, ul {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0 0 2em 0;
-}
-li {
-  line-height: auto;
-}
-ul {
-  list-style-position: outside;
-  list-style-type: square;
-}
-ol {
-  list-style-position: outside;
-  list-style-type: decimal;
-}
-strong, b {
-  font-family: AvenirNext-Bold, AvenirNextCondensed-DemiBold, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
-  font-weight: 600;
-}
-em, i, q {
-  font-family: AvenirNext-BoldItalic, AvenirNext-Italic, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
-  font-style: italic;
-}
-blockquote {
-  padding-left: 1em;
-  border-left: 0.3125em solid #c0c0c0;
-  line-height: normal;
-  /* margin: 0; */
-}
-blockquote p {
-  font-family: AvenirNext-Italic, AvenirNext-Regular, Futura, "Century Gothic", AppleGothic, Corbel, "Myriad Pro", "Lucida Grande", "Trebuchet Ms", sans-serif;
-  font-style: italic;
-  /* margin: 0; */
-  font-size: 1.25rem;
-  line-height: 1.2;
-  margin: 1.2em 0 1.2em 0;
-}
+  h3::selection, h4::selection, h5::selection, h6::selection, li::selection, ol::selection {
+    background-color: rgba(133, 201, 232, 0.3); }
 
-@media screen and (max-width: 750px) {
-  -webkit-text-size-adjust: none;
-}
+  code::selection {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #eee; }
 
-.pagecontent {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
+  code span::selection {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #eee !important; }
 
+  a::selection {
+    background-color: rgba(255, 230, 102, 0.2); }
+
+  .inverted a::selection {
+    background-color: rgba(255, 230, 102, 0.6); }
+
+  td::selection, th::selection, caption::selection {
+    background-color: rgba(180, 237, 95, 0.5); } }
 </style>
 
 
 </head>
 
 <body>
-<div class="pagecontent">
+
 <h1 id="toc_0">Toby’s Game Giveaway</h1>
 
 <p>I have a ton of un-redeemed Steam codes from all the Humble Bundles I’ve bought over the years. Some are for games I already have on Steam. Some are for games I own on another platform. Others are for games I’m not interested in playing. At least not when my list of “games I want to play” (as well as “books I want to read” and “TV shows I want to watch”) is already so long.</p>
 
-<p>So I’m doing a giveaway. Look through the available games below, think about which ones you want, then <a href="https://goo.gl/forms/8ShZg7QdDffyTch03">go fill this form out</a>. An explanation of how the giveaway works is over there.</p>
+<p>So I’m doing a giveaway. Look through the available games below, then <a href="https://goo.gl/forms/8ShZg7QdDffyTch03">go fill this form out</a>. An explanation of how the giveaway works is over there.</p>
 
 <p>There are a lot of popular and well-reviewed games here. I left out a few games that had really bad reviews. I’m not trying to dump trash games onto my friends. But I did list some games with clear flaws (e.g. clunky controls) as long as they still had fans.</p>
 
@@ -490,7 +424,7 @@ blockquote p {
 <p>Guacamelee! is a Metroidvania-style action-platformer set in a magical world inspired by traditional Mexican culture and folklore. The game features melee combat, parallel dimensions and same-screen co-op. The original Guacamelee! received wide critical acclaim and was a finalist for both IndieCade and the Independent Games Festival&#39;s Excellence in Visual Art award.</p>
 </blockquote>
 
-<p>(I also have a key for Guacamelee Gold Edition, which is apparently not quite as good as the Super Turbo Championship Edition. However, it does have a native Mac version. I can give the Gold Edition to a runner-up, or to a winner who prefers to have a native Mac version.)</p>
+<p>(I also a key for Guacamelee Gold Edition, which is apparently not quite as good as the Super Turbo Championship Edition. However, it does have a native Mac version. I can give the Gold Edition to a runner-up, or to a winner who prefers to have a native Mac version.)</p>
 
 <h1 id="toc_19"><a href="https://store.steampowered.com/app/437390/HoPiKo/">HoPiKo</a></h1>
 
@@ -905,7 +839,9 @@ blockquote p {
 <blockquote>
 <p>World of Goo is a multiple award winning physics based puzzle / construction game made entirely by two guys. Drag and drop living, squirming, talking, globs of goo to build structures, bridges, cannonballs, zeppelins, and giant tongues. The millions of Goo Balls that live in the beautiful World of Goo are curious to explore - but they don&#39;t know that they are in a game, or that they are extremely delicious.</p>
 </blockquote>
-</div>
+
+
+
 
 </body>
 
